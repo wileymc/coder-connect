@@ -9,17 +9,26 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+  --pink-100: #fff1f6;
+  --pink-200: #ffd6e7;
+  --pink-300: #ffadd2;
+  --pink-400: #ff85c0;
+  --pink-500: #fb78aa;
+  --pink-600: #f95f8f;
+  --pink-700: #f74b7a;
+  --pink-800: #f53b6e;
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
     #0885ff33 55deg,
-    #54d6ff33 120deg,
+    red 120deg,
     #0071ff33 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
+    red
   );
 
   --tile-start-rgb: 239, 245, 249;
@@ -46,12 +55,12 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --primary-glow: radial-gradient(rgba(185, 95, 227, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
       to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
+      rgba(241, 53, 169, 0),
+      rgba(250, 96, 173, 0),
+      rgba(118, 69, 78, 0.3)
     );
 
     --tile-start-rgb: 2, 13, 46;
@@ -82,7 +91,8 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
+
 }
 
 body {
