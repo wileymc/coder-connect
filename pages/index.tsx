@@ -49,7 +49,7 @@ export default function Home() {
           Coder Connect
         </h1>
         <small className={clsx(inter.className, styles.comingSoon)}>
-          Coming in early 2023. Sign up to be notified when we launch.
+          Coming in early 2023
         </small>
 
         <form className={styles.form} onSubmit={handleSubmit(handleFormSubmit)}>
@@ -61,7 +61,7 @@ export default function Home() {
             })}
           />
           <button className={inter.className} disabled={!formState.isValid}>
-            Notify Me
+            Get Early Access
           </button>
         </form>
 
