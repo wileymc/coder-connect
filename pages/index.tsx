@@ -28,9 +28,10 @@ export default function Home() {
     const { error } = await supabase.from("emails").insert({ email });
     if (error) {
       console.log(error);
+    } else {
+      toast.success("Thanks for signing up! We'll notify you when we launch.");
+      reset();
     }
-    toast.success("Thanks for signing up! We'll notify you when we launch.");
-    reset();
   };
   return (
     <>
