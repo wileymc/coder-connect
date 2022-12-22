@@ -60,7 +60,10 @@ export default function Home() {
               pattern: /^\S+@\S+$/i,
             })}
           />
-          <button className={inter.className} disabled={!formState.isValid}>
+          <button
+            className={clsx(inter.className, styles.gradientBorder)}
+            disabled={!formState.isValid}
+          >
             Get Early Access
           </button>
         </form>
@@ -96,11 +99,11 @@ export default function Home() {
               <RiTeamFill size={50} />
             </div>
             <h2 className={inter.className}>
-              Contribute production ready code
+              UX Design and Product Management Skills
             </h2>
             <p className={inter.className}>
-              Coder Connect is the best way to connect with prospective projects
-              that need your help
+              We help you find projects that need your skills and help you
+              contribute to them to build your resume and professional acumen.
             </p>
           </div>
           <div className={styles.card}>
