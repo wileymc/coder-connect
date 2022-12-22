@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 4.5rem;
+  padding: 6rem;
   min-height: 100vh;
 }
 
@@ -19,6 +19,12 @@
 
 .coderConnect {
   font-size: 5em;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
 }
 
 .description a {
@@ -108,7 +114,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 2.5rem 0;
 }
 
 .center::before {
@@ -139,7 +145,10 @@
 }
 
 .comingSoon {
+  border-radius: 6px;
+  padding: 0.25rem;
   color: var(--pink-400);
+  background-image: var(--blue-to-pink-gradient);
 }
 
 .thirteen::before,

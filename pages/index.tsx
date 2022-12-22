@@ -10,6 +10,7 @@ import {
 } from "react-icons/ri";
 import clsx from "clsx";
 import { useForm } from "react-hook-form";
+import logo from "../public/git.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +45,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1 className={clsx(inter.className, styles.coderConnect)}>
+          <Image src={logo} alt="coder connect git" />
           Coder Connect
         </h1>
         <small className={clsx(inter.className, styles.comingSoon)}>
@@ -86,23 +88,21 @@ export default function Home() {
               <RiTeamFill size={50} />
             </div>
             <h2 className={inter.className}>
-              Improve your skills working with a team.
+              Contribute production ready code
             </h2>
             <p className={inter.className}>
               Coder Connect is the best way to connect with prospective projects
-              that need your help.
+              that need your help
             </p>
           </div>
           <div className={styles.card}>
             <div className={styles.center}>
               <RiGithubLine size={50} />
             </div>
-            <h2 className={inter.className}>
-              Contribute to open source projects.
-            </h2>
+            <h2 className={inter.className}>Use your strengths</h2>
             <p className={inter.className}>
               We help you find projects that use the technologies you want to
-              learn and contribute to them.
+              learn and help contribute with the skills you have.
             </p>
           </div>
         </div>
