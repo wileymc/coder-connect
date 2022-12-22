@@ -100,7 +100,7 @@ export default function Home() {
               <RiTeamFill size={50} />
             </div>
             <h2 className={inter.className}>
-              UX Design and Product Management Skills
+              UX Design and Product Management
             </h2>
             <p className={inter.className}>
               We help you find projects that need your skills and help you

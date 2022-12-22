@@ -51,6 +51,7 @@
   gap: 1rem;
   width: 100%;
   max-width: 666px;
+  margin: 1rem auto;
 }
 
 .form input {
@@ -175,6 +176,7 @@
 }
 
 .comingSoon {
+  margin: 1rem auto;
   border-radius: 6px;
   padding: 0.25rem;
   color: var(--pink-400);
