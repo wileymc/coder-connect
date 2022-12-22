@@ -22,7 +22,7 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default function Home() {
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, formState } = useForm();
   const handleFormSubmit = async (data: any) => {
     const { email } = data;
     const { error } = await supabase.from("emails").insert({ email });
@@ -53,8 +53,16 @@ export default function Home() {
         </small>
 
         <form className={styles.form} onSubmit={handleSubmit(handleFormSubmit)}>
-          <input placeholder="Email" {...register("email")} />
-          <button className={inter.className}>Notify Me</button>
+          <input
+            placeholder="Email"
+            {...register("email", {
+              required: true,
+              pattern: /^\S+@\S+$/i,
+            })}
+          />
+          <button className={inter.className} disabled={!formState.isValid}>
+            Notify Me
+          </button>
         </form>
 
         <div className={styles.grid}>
